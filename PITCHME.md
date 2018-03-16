@@ -15,6 +15,7 @@
   - Standardizing Gradle Across Teams
   - Software Domain Modeling
   - Gradle Plugin Authoring
+
 ---
 
 ## Gradle Features
@@ -27,6 +28,7 @@
   - Embed Gradle with Tooling API
   - Customizable Logging
 
+---
 
 ## Build Scan!
 
