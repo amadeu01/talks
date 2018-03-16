@@ -1,14 +1,8 @@
-#
-# GitPitch Slideshow Custom Settings
-#
-# For details, visit Wiki:
-# https://github.com/gitpitch/gitpitch/wiki/Slideshow-Settings
-#
+# @author: Amadeu Cavalcante 
 theme : simple
 theme-override : assets/css/PITCHME.css
 # theme-override : assets/css/PITCHME.codemax.css
 highlight : atom-one-light
-logo : assets/image/logo.png
 transition : none
 published : true
-footnote : "GitPitch [ White ] Presentation Template"
+footnote : "Gradle Introduction Presentation"
