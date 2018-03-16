@@ -4,16 +4,6 @@
 
 ---
 
-## Tips!
-
-<br>
-
-@fa[arrows gp-tip](Press F to go Fullscreen)
-
-@fa[microphone gp-tip](Press S for Speaker Notes)
-
----
-
 ## Gradle Features
 
 - Running Gradle Builds
@@ -49,6 +39,11 @@
 ---
 
 ## Ecosystem-specific Features
+
+
+---
+
+## References
 
 
 
