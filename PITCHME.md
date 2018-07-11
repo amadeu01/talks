@@ -39,7 +39,7 @@ It is impossible to write good code at first.
 ### Most developers think
 
 @ul
-"TDD has to do with test"
+- "TDD has to do with test"
 @ulend
 
 +++
@@ -47,7 +47,7 @@ It is impossible to write good code at first.
 ### However
 
 @ul
-"It has to do with designs" @note[The benefit of an isolated test is that you test one function at a time. Therefore, those tests put tremendous pressure on our designs, those tests are the ones that make most clear where our design problems are. The whole point of doing TDD is not doing with a test. One of the goals of test-driven development is to learn about the quality of our design. If our design has problems the test will be hard to write and the test will be hard to understand.]
+- "It has to do with designs" @note[The benefit of an isolated test is that you test one function at a time. Therefore, those tests put tremendous pressure on our designs, those tests are the ones that make most clear where our design problems are. The whole point of doing TDD is not doing with a test. One of the goals of test-driven development is to learn about the quality of our design. If our design has problems the test will be hard to write and the test will be hard to understand.]
 @ulend
 
 ---
