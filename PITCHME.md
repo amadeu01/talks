@@ -15,7 +15,7 @@
 
 @olend
 
----
++++
 
 1. Test suit runs.
 2. Therefore, the code can be deployed.
@@ -28,12 +28,26 @@
 It is impossible to write good code at first.
 @ulend
 
++++
+
+@div[center]
+![](assets/images/parrot2.gif)
+@divend
+
 ---
 
-# Example
+#### @size[1.3em](Example)
 
 ---
 
 @div[center]
 ![](assets/images/parrot.gif)
 @divend
+
+---
+
+---?gist=amadeu01/add24ba3529fd8ce1b2a717bf5e65030&lang=Kotlin&title=Twofer implementation
+
+---
+
+---?gist=amadeu01/d2a41c12a77078670af8016217c24c96&lang=Kotlin&title=Twofer test
