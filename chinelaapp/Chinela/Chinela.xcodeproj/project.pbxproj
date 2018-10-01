@@ -1,0 +1,1018 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6579D2732162484D0055D74F /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6579D2722162484D0055D74F /* SnapKit.framework */; };
+		6579D278216249E10055D74F /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6579D275216249E10055D74F /* Driver.swift */; };
+		6579D279216249E10055D74F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6579D276216249E10055D74F /* Extensions.swift */; };
+		6579D27A216249E10055D74F /* SideEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6579D277216249E10055D74F /* SideEffects.swift */; };
+		6579D27C21624A240055D74F /* ConstraintsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6579D27B21624A240055D74F /* ConstraintsExample.swift */; };
+		6579D27E21624DC00055D74F /* BasicUIScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6579D27D21624DC00055D74F /* BasicUIScrollViewController.swift */; };
+		6585B5B22161AF8D005A7AD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6585B5B12161AF8D005A7AD5 /* AppDelegate.swift */; };
+		6585B5B92161AF8E005A7AD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6585B5B82161AF8E005A7AD5 /* Assets.xcassets */; };
+		6585B5BC2161AF8E005A7AD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6585B5BA2161AF8E005A7AD5 /* LaunchScreen.storyboard */; };
+		6585B5C72161AF8E005A7AD5 /* ChinelaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6585B5C62161AF8E005A7AD5 /* ChinelaTests.swift */; };
+		6585B5D22161AF8E005A7AD5 /* ChinelaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6585B5D12161AF8E005A7AD5 /* ChinelaUITests.swift */; };
+		6585B5E82161AFCC005A7AD5 /* ChinelaFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 6585B5E62161AFCC005A7AD5 /* ChinelaFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6585B5EB2161AFCC005A7AD5 /* ChinelaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6585B5E42161AFCC005A7AD5 /* ChinelaFramework.framework */; };
+		6585B5EC2161AFCD005A7AD5 /* ChinelaFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6585B5E42161AFCC005A7AD5 /* ChinelaFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6585B6002161B636005A7AD5 /* VirtualViews.h in Headers */ = {isa = PBXBuildFile; fileRef = 6585B5FE2161B636005A7AD5 /* VirtualViews.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6585B6092161B655005A7AD5 /* VirtualViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6585B6082161B655005A7AD5 /* VirtualViews.swift */; };
+		6585B60B2161B682005A7AD5 /* VirtualViews+Rendering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6585B60A2161B682005A7AD5 /* VirtualViews+Rendering.swift */; };
+		6585B60D2161B77A005A7AD5 /* VirtualViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6585B5FC2161B636005A7AD5 /* VirtualViews.framework */; };
+		6585B6112161B81C005A7AD5 /* TodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6585B6102161B81C005A7AD5 /* TodoApp.swift */; };
+		6585B6122161B910005A7AD5 /* VirtualViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6585B5FC2161B636005A7AD5 /* VirtualViews.framework */; };
+		6585B6132161B910005A7AD5 /* VirtualViews.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6585B5FC2161B636005A7AD5 /* VirtualViews.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6585B6182161D4AC005A7AD5 /* GifApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6585B6172161D4AC005A7AD5 /* GifApp.swift */; };
+		6585B61A2161D90B005A7AD5 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6585B6192161D90B005A7AD5 /* Media.xcassets */; };
+		6585B61E2161DD93005A7AD5 /* RootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6585B61D2161DD93005A7AD5 /* RootClass.swift */; };
+		6585B6202161E57B005A7AD5 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6585B61F2161E57B005A7AD5 /* Charts.framework */; };
+		6585B6272161F13E005A7AD5 /* BarChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6585B6262161F13E005A7AD5 /* BarChartsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6585B5C32161AF8E005A7AD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6585B5A62161AF8D005A7AD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6585B5AD2161AF8D005A7AD5;
+			remoteInfo = Chinela;
+		};
+		6585B5CE2161AF8E005A7AD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6585B5A62161AF8D005A7AD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6585B5AD2161AF8D005A7AD5;
+			remoteInfo = Chinela;
+		};
+		6585B5E92161AFCC005A7AD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6585B5A62161AF8D005A7AD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6585B5E32161AFCC005A7AD5;
+			remoteInfo = ChinelaFramework;
+		};
+		6585B6142161B910005A7AD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6585B5A62161AF8D005A7AD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6585B5FB2161B636005A7AD5;
+			remoteInfo = VirtualViews;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6585B5F02161AFCD005A7AD5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6585B5EC2161AFCD005A7AD5 /* ChinelaFramework.framework in Embed Frameworks */,
+				6585B6132161B910005A7AD5 /* VirtualViews.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6579D2722162484D0055D74F /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		6579D275216249E10055D74F /* Driver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Driver.swift; path = ChinelaFramework/Elm/Driver.swift; sourceTree = SOURCE_ROOT; };
+		6579D276216249E10055D74F /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = ChinelaFramework/Elm/Extensions.swift; sourceTree = SOURCE_ROOT; };
+		6579D277216249E10055D74F /* SideEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SideEffects.swift; path = ChinelaFramework/Elm/SideEffects.swift; sourceTree = SOURCE_ROOT; };
+		6579D27B21624A240055D74F /* ConstraintsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintsExample.swift; sourceTree = "<group>"; };
+		6579D27D21624DC00055D74F /* BasicUIScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicUIScrollViewController.swift; sourceTree = "<group>"; };
+		6585B5AE2161AF8D005A7AD5 /* Chinela.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chinela.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6585B5B12161AF8D005A7AD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6585B5B82161AF8E005A7AD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6585B5BB2161AF8E005A7AD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6585B5BD2161AF8E005A7AD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6585B5C22161AF8E005A7AD5 /* ChinelaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChinelaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6585B5C62161AF8E005A7AD5 /* ChinelaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChinelaTests.swift; sourceTree = "<group>"; };
+		6585B5C82161AF8E005A7AD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6585B5CD2161AF8E005A7AD5 /* ChinelaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChinelaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6585B5D12161AF8E005A7AD5 /* ChinelaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChinelaUITests.swift; sourceTree = "<group>"; };
+		6585B5D32161AF8E005A7AD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6585B5E42161AFCC005A7AD5 /* ChinelaFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChinelaFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6585B5E62161AFCC005A7AD5 /* ChinelaFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChinelaFramework.h; sourceTree = "<group>"; };
+		6585B5E72161AFCC005A7AD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6585B5FC2161B636005A7AD5 /* VirtualViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VirtualViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6585B5FE2161B636005A7AD5 /* VirtualViews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VirtualViews.h; sourceTree = "<group>"; };
+		6585B5FF2161B636005A7AD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6585B6082161B655005A7AD5 /* VirtualViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualViews.swift; sourceTree = "<group>"; };
+		6585B60A2161B682005A7AD5 /* VirtualViews+Rendering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VirtualViews+Rendering.swift"; sourceTree = "<group>"; };
+		6585B6102161B81C005A7AD5 /* TodoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoApp.swift; sourceTree = "<group>"; };
+		6585B6162161B9D2005A7AD5 /* ChinelaPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ChinelaPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		6585B6172161D4AC005A7AD5 /* GifApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifApp.swift; sourceTree = "<group>"; };
+		6585B6192161D90B005A7AD5 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		6585B61D2161DD93005A7AD5 /* RootClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootClass.swift; sourceTree = "<group>"; };
+		6585B61F2161E57B005A7AD5 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = Carthage/Build/iOS/Charts.framework; sourceTree = "<group>"; };
+		6585B6262161F13E005A7AD5 /* BarChartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6585B5AB2161AF8D005A7AD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6585B5EB2161AFCC005A7AD5 /* ChinelaFramework.framework in Frameworks */,
+				6585B6122161B910005A7AD5 /* VirtualViews.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6585B5BF2161AF8E005A7AD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6585B5CA2161AF8E005A7AD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6585B5E12161AFCC005A7AD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6585B60D2161B77A005A7AD5 /* VirtualViews.framework in Frameworks */,
+				6585B6202161E57B005A7AD5 /* Charts.framework in Frameworks */,
+				6579D2732162484D0055D74F /* SnapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6585B5F92161B636005A7AD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6579D274216249AC0055D74F /* Elm */ = {
+			isa = PBXGroup;
+			children = (
+				6579D275216249E10055D74F /* Driver.swift */,
+				6579D276216249E10055D74F /* Extensions.swift */,
+				6579D277216249E10055D74F /* SideEffects.swift */,
+			);
+			name = Elm;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		6585B5A52161AF8D005A7AD5 = {
+			isa = PBXGroup;
+			children = (
+				6585B6162161B9D2005A7AD5 /* ChinelaPlayground.playground */,
+				6585B5B02161AF8D005A7AD5 /* Chinela */,
+				6585B5C52161AF8E005A7AD5 /* ChinelaTests */,
+				6585B5D02161AF8E005A7AD5 /* ChinelaUITests */,
+				6585B5E52161AFCC005A7AD5 /* ChinelaFramework */,
+				6585B5FD2161B636005A7AD5 /* VirtualViews */,
+				6585B5AF2161AF8D005A7AD5 /* Products */,
+				6585B60C2161B77A005A7AD5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6585B5AF2161AF8D005A7AD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6585B5AE2161AF8D005A7AD5 /* Chinela.app */,
+				6585B5C22161AF8E005A7AD5 /* ChinelaTests.xctest */,
+				6585B5CD2161AF8E005A7AD5 /* ChinelaUITests.xctest */,
+				6585B5E42161AFCC005A7AD5 /* ChinelaFramework.framework */,
+				6585B5FC2161B636005A7AD5 /* VirtualViews.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6585B5B02161AF8D005A7AD5 /* Chinela */ = {
+			isa = PBXGroup;
+			children = (
+				6585B5B12161AF8D005A7AD5 /* AppDelegate.swift */,
+				6585B5B82161AF8E005A7AD5 /* Assets.xcassets */,
+				6585B5BA2161AF8E005A7AD5 /* LaunchScreen.storyboard */,
+				6585B5BD2161AF8E005A7AD5 /* Info.plist */,
+			);
+			path = Chinela;
+			sourceTree = "<group>";
+		};
+		6585B5C52161AF8E005A7AD5 /* ChinelaTests */ = {
+			isa = PBXGroup;
+			children = (
+				6585B5C62161AF8E005A7AD5 /* ChinelaTests.swift */,
+				6585B5C82161AF8E005A7AD5 /* Info.plist */,
+			);
+			path = ChinelaTests;
+			sourceTree = "<group>";
+		};
+		6585B5D02161AF8E005A7AD5 /* ChinelaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6585B5D12161AF8E005A7AD5 /* ChinelaUITests.swift */,
+				6585B5D32161AF8E005A7AD5 /* Info.plist */,
+			);
+			path = ChinelaUITests;
+			sourceTree = "<group>";
+		};
+		6585B5E52161AFCC005A7AD5 /* ChinelaFramework */ = {
+			isa = PBXGroup;
+			children = (
+				6579D274216249AC0055D74F /* Elm */,
+				6585B6212161E638005A7AD5 /* Charts */,
+				6585B5E62161AFCC005A7AD5 /* ChinelaFramework.h */,
+				6585B5E72161AFCC005A7AD5 /* Info.plist */,
+				6585B6102161B81C005A7AD5 /* TodoApp.swift */,
+				6585B6172161D4AC005A7AD5 /* GifApp.swift */,
+				6585B6192161D90B005A7AD5 /* Media.xcassets */,
+				6585B61D2161DD93005A7AD5 /* RootClass.swift */,
+				6579D27B21624A240055D74F /* ConstraintsExample.swift */,
+				6579D27D21624DC00055D74F /* BasicUIScrollViewController.swift */,
+			);
+			path = ChinelaFramework;
+			sourceTree = "<group>";
+		};
+		6585B5FD2161B636005A7AD5 /* VirtualViews */ = {
+			isa = PBXGroup;
+			children = (
+				6585B5FE2161B636005A7AD5 /* VirtualViews.h */,
+				6585B5FF2161B636005A7AD5 /* Info.plist */,
+				6585B6082161B655005A7AD5 /* VirtualViews.swift */,
+				6585B60A2161B682005A7AD5 /* VirtualViews+Rendering.swift */,
+			);
+			path = VirtualViews;
+			sourceTree = "<group>";
+		};
+		6585B60C2161B77A005A7AD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6579D2722162484D0055D74F /* SnapKit.framework */,
+				6585B61F2161E57B005A7AD5 /* Charts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6585B6212161E638005A7AD5 /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				6585B6262161F13E005A7AD5 /* BarChartsViewController.swift */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6585B5DF2161AFCC005A7AD5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6585B5E82161AFCC005A7AD5 /* ChinelaFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6585B5F72161B636005A7AD5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6585B6002161B636005A7AD5 /* VirtualViews.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6585B5AD2161AF8D005A7AD5 /* Chinela */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6585B5D62161AF8E005A7AD5 /* Build configuration list for PBXNativeTarget "Chinela" */;
+			buildPhases = (
+				6585B5AA2161AF8D005A7AD5 /* Sources */,
+				6585B5AB2161AF8D005A7AD5 /* Frameworks */,
+				6585B5AC2161AF8D005A7AD5 /* Resources */,
+				6585B5F02161AFCD005A7AD5 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6585B5EA2161AFCC005A7AD5 /* PBXTargetDependency */,
+				6585B6152161B910005A7AD5 /* PBXTargetDependency */,
+			);
+			name = Chinela;
+			productName = Chinela;
+			productReference = 6585B5AE2161AF8D005A7AD5 /* Chinela.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6585B5C12161AF8E005A7AD5 /* ChinelaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6585B5D92161AF8E005A7AD5 /* Build configuration list for PBXNativeTarget "ChinelaTests" */;
+			buildPhases = (
+				6585B5BE2161AF8E005A7AD5 /* Sources */,
+				6585B5BF2161AF8E005A7AD5 /* Frameworks */,
+				6585B5C02161AF8E005A7AD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6585B5C42161AF8E005A7AD5 /* PBXTargetDependency */,
+			);
+			name = ChinelaTests;
+			productName = ChinelaTests;
+			productReference = 6585B5C22161AF8E005A7AD5 /* ChinelaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6585B5CC2161AF8E005A7AD5 /* ChinelaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6585B5DC2161AF8E005A7AD5 /* Build configuration list for PBXNativeTarget "ChinelaUITests" */;
+			buildPhases = (
+				6585B5C92161AF8E005A7AD5 /* Sources */,
+				6585B5CA2161AF8E005A7AD5 /* Frameworks */,
+				6585B5CB2161AF8E005A7AD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6585B5CF2161AF8E005A7AD5 /* PBXTargetDependency */,
+			);
+			name = ChinelaUITests;
+			productName = ChinelaUITests;
+			productReference = 6585B5CD2161AF8E005A7AD5 /* ChinelaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		6585B5E32161AFCC005A7AD5 /* ChinelaFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6585B5ED2161AFCD005A7AD5 /* Build configuration list for PBXNativeTarget "ChinelaFramework" */;
+			buildPhases = (
+				6585B5DF2161AFCC005A7AD5 /* Headers */,
+				6585B5E02161AFCC005A7AD5 /* Sources */,
+				6585B5E12161AFCC005A7AD5 /* Frameworks */,
+				6585B5E22161AFCC005A7AD5 /* Resources */,
+				6585B6252161EFAD005A7AD5 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChinelaFramework;
+			productName = ChinelaFramework;
+			productReference = 6585B5E42161AFCC005A7AD5 /* ChinelaFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6585B5FB2161B636005A7AD5 /* VirtualViews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6585B6052161B636005A7AD5 /* Build configuration list for PBXNativeTarget "VirtualViews" */;
+			buildPhases = (
+				6585B5F72161B636005A7AD5 /* Headers */,
+				6585B5F82161B636005A7AD5 /* Sources */,
+				6585B5F92161B636005A7AD5 /* Frameworks */,
+				6585B5FA2161B636005A7AD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VirtualViews;
+			productName = VirtualViews;
+			productReference = 6585B5FC2161B636005A7AD5 /* VirtualViews.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6585B5A62161AF8D005A7AD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Amadeu Cavalcante Filho";
+				TargetAttributes = {
+					6585B5AD2161AF8D005A7AD5 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					6585B5C12161AF8E005A7AD5 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 6585B5AD2161AF8D005A7AD5;
+					};
+					6585B5CC2161AF8E005A7AD5 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 6585B5AD2161AF8D005A7AD5;
+					};
+					6585B5E32161AFCC005A7AD5 = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+					};
+					6585B5FB2161B636005A7AD5 = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+					};
+				};
+			};
+			buildConfigurationList = 6585B5A92161AF8D005A7AD5 /* Build configuration list for PBXProject "Chinela" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6585B5A52161AF8D005A7AD5;
+			productRefGroup = 6585B5AF2161AF8D005A7AD5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6585B5AD2161AF8D005A7AD5 /* Chinela */,
+				6585B5C12161AF8E005A7AD5 /* ChinelaTests */,
+				6585B5CC2161AF8E005A7AD5 /* ChinelaUITests */,
+				6585B5E32161AFCC005A7AD5 /* ChinelaFramework */,
+				6585B5FB2161B636005A7AD5 /* VirtualViews */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6585B5AC2161AF8D005A7AD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6585B5BC2161AF8E005A7AD5 /* LaunchScreen.storyboard in Resources */,
+				6585B5B92161AF8E005A7AD5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6585B5C02161AF8E005A7AD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6585B5CB2161AF8E005A7AD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6585B5E22161AFCC005A7AD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6585B61A2161D90B005A7AD5 /* Media.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6585B5FA2161B636005A7AD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6585B6252161EFAD005A7AD5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Charts.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Charts.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6585B5AA2161AF8D005A7AD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6585B5B22161AF8D005A7AD5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6585B5BE2161AF8E005A7AD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6585B5C72161AF8E005A7AD5 /* ChinelaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6585B5C92161AF8E005A7AD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6585B5D22161AF8E005A7AD5 /* ChinelaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6585B5E02161AFCC005A7AD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6579D278216249E10055D74F /* Driver.swift in Sources */,
+				6579D279216249E10055D74F /* Extensions.swift in Sources */,
+				6579D27E21624DC00055D74F /* BasicUIScrollViewController.swift in Sources */,
+				6579D27A216249E10055D74F /* SideEffects.swift in Sources */,
+				6579D27C21624A240055D74F /* ConstraintsExample.swift in Sources */,
+				6585B6272161F13E005A7AD5 /* BarChartsViewController.swift in Sources */,
+				6585B6182161D4AC005A7AD5 /* GifApp.swift in Sources */,
+				6585B61E2161DD93005A7AD5 /* RootClass.swift in Sources */,
+				6585B6112161B81C005A7AD5 /* TodoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6585B5F82161B636005A7AD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6585B6092161B655005A7AD5 /* VirtualViews.swift in Sources */,
+				6585B60B2161B682005A7AD5 /* VirtualViews+Rendering.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6585B5C42161AF8E005A7AD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6585B5AD2161AF8D005A7AD5 /* Chinela */;
+			targetProxy = 6585B5C32161AF8E005A7AD5 /* PBXContainerItemProxy */;
+		};
+		6585B5CF2161AF8E005A7AD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6585B5AD2161AF8D005A7AD5 /* Chinela */;
+			targetProxy = 6585B5CE2161AF8E005A7AD5 /* PBXContainerItemProxy */;
+		};
+		6585B5EA2161AFCC005A7AD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6585B5E32161AFCC005A7AD5 /* ChinelaFramework */;
+			targetProxy = 6585B5E92161AFCC005A7AD5 /* PBXContainerItemProxy */;
+		};
+		6585B6152161B910005A7AD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6585B5FB2161B636005A7AD5 /* VirtualViews */;
+			targetProxy = 6585B6142161B910005A7AD5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6585B5BA2161AF8E005A7AD5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6585B5BB2161AF8E005A7AD5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6585B5D42161AF8E005A7AD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6585B5D52161AF8E005A7AD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6585B5D72161AF8E005A7AD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YMWQA4CLV6;
+				INFOPLIST_FILE = Chinela/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.amadeucavalcante.Chinela;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6585B5D82161AF8E005A7AD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YMWQA4CLV6;
+				INFOPLIST_FILE = Chinela/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.amadeucavalcante.Chinela;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6585B5DA2161AF8E005A7AD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YMWQA4CLV6;
+				INFOPLIST_FILE = ChinelaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.amadeucavalcante.ChinelaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chinela.app/Chinela";
+			};
+			name = Debug;
+		};
+		6585B5DB2161AF8E005A7AD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YMWQA4CLV6;
+				INFOPLIST_FILE = ChinelaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.amadeucavalcante.ChinelaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chinela.app/Chinela";
+			};
+			name = Release;
+		};
+		6585B5DD2161AF8E005A7AD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YMWQA4CLV6;
+				INFOPLIST_FILE = ChinelaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.amadeucavalcante.ChinelaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Chinela;
+			};
+			name = Debug;
+		};
+		6585B5DE2161AF8E005A7AD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YMWQA4CLV6;
+				INFOPLIST_FILE = ChinelaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.amadeucavalcante.ChinelaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Chinela;
+			};
+			name = Release;
+		};
+		6585B5EE2161AFCD005A7AD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = YMWQA4CLV6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = ChinelaFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.amadeucavalcante.ChinelaFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6585B5EF2161AFCD005A7AD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = YMWQA4CLV6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = ChinelaFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.amadeucavalcante.ChinelaFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6585B6062161B636005A7AD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = YMWQA4CLV6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = VirtualViews/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.amadeucavalcante.VirtualViews;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6585B6072161B636005A7AD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = YMWQA4CLV6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = VirtualViews/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.amadeucavalcante.VirtualViews;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6585B5A92161AF8D005A7AD5 /* Build configuration list for PBXProject "Chinela" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6585B5D42161AF8E005A7AD5 /* Debug */,
+				6585B5D52161AF8E005A7AD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6585B5D62161AF8E005A7AD5 /* Build configuration list for PBXNativeTarget "Chinela" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6585B5D72161AF8E005A7AD5 /* Debug */,
+				6585B5D82161AF8E005A7AD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6585B5D92161AF8E005A7AD5 /* Build configuration list for PBXNativeTarget "ChinelaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6585B5DA2161AF8E005A7AD5 /* Debug */,
+				6585B5DB2161AF8E005A7AD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6585B5DC2161AF8E005A7AD5 /* Build configuration list for PBXNativeTarget "ChinelaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6585B5DD2161AF8E005A7AD5 /* Debug */,
+				6585B5DE2161AF8E005A7AD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6585B5ED2161AFCD005A7AD5 /* Build configuration list for PBXNativeTarget "ChinelaFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6585B5EE2161AFCD005A7AD5 /* Debug */,
+				6585B5EF2161AFCD005A7AD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6585B6052161B636005A7AD5 /* Build configuration list for PBXNativeTarget "VirtualViews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6585B6062161B636005A7AD5 /* Debug */,
+				6585B6072161B636005A7AD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6585B5A62161AF8D005A7AD5 /* Project object */;
+}

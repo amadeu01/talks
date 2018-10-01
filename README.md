@@ -1,7 +1,5 @@
-# Playground Driven Development
+# Playground Driven Development Talk
 
-I will add my talks here.
+This is a talk about Playground Driven Development
 
-I'll create one branch for each talk I want to make. Then, put sfuff related to that talk there :smile:
-
-Feel free to ask anything :smile:
+[Presentation](https://gitpitch.com/amadeu01/talks/playground-driven-development)
