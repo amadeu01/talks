@@ -112,9 +112,8 @@ Obrigado!!!  👋
 <br>
 
 @snap[south-east]
-@size[0.5em](Amadeu Cavalcante – [@amadeu01](https://github.com/amadeu01))
+@size[0.5em](Amadeu Cavalcante – [@amadeu01](https://github.com/amadeu01) - [talks](https://gitpitch.com/amadeu01/talks/playground-driven-development))
 @snapend
 
-@size[0.5em]([talks](https://gitpitch.com/amadeu01/talks/playground-driven-development))
 <br>
-@size[0.2em](Agradecimentos a minha mulher que me liberou da faxina para montar a apresentação hehe)
+@size[0.3em](Agradecimentos a minha mulher que me liberou da faxina para montar a apresentação hehe)
