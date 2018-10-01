@@ -12,25 +12,28 @@
 
 ### O que é Playground Driven Development?
 
-- @note[Outra metodologia de desenvolvimento?]
 
-- @note[Outro <Alguma coisa>DD]
 
-- @note[É uma maneira fantástica de tentar coisas novas e, principalmente, testar UI]
 
+
+Note:
+Outra metodologia de desenvolvimento?
+É uma maneira fantástica de tentar coisas novas e, principalmente, testar UI
+Outro <Alguma coisa>DD
 ---
 
 ### Quem usa isso ?
 
-#### https://www.github.com/kickstarter/ios-oss
+#### (Kickstarter)[https://www.github.com/kickstarter/ios-oss]
 
-- @note[Kickstarter usou isso por um tempo. Mas, "esqueceram"]
+Note:
+Kickstarter usou isso por um tempo. Mas, "esqueceram"]
 
-- @note[Kickstarter é open source, então, pode dar uma olhar lá 😁]
+Kickstarter é open source, então, pode dar uma olhar lá 😁
 
-- @note[A primeira vez que vi isso foi em uma palestra de um cara que costumava trabalhar no Kickstarter]
+A primeira vez que vi isso foi em uma palestra de um cara que costumava trabalhar no Kickstarter
 
-- @note[O carinha que apresentou isso Brandon Williams]
+O carinha que apresentou isso Brandon Williams
 
 ---
 
