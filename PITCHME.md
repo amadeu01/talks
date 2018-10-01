@@ -134,6 +134,6 @@ theme: black
 #### Playground Driven Development
 # [fit] Obrigado!!!  👋
 #### Amadeu Cavalcante – @amadeu01
-#### https://github.com/amadeu01/presentations
+#### https://gitpitch.com/amadeu01/talks/playground-driven-development
 
 #### Agradecimentos a minha mulher que me liberou da faxina para montar a apresentação hehe
