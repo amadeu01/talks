@@ -105,10 +105,13 @@ Se você mudar algo no ChinelaFramework, você tem que buildar novamente, daí, 
 ---
 
 #### Playground Driven Development
+<br>
 
 Obrigado!!!  👋
 
-#### Amadeu Cavalcante – @amadeu01
-#### https://gitpitch.com/amadeu01/talks/playground-driven-development
+<br>
 
-#### Agradecimentos a minha mulher que me liberou da faxina para montar a apresentação hehe
+#### Amadeu Cavalcante – [@amadeu01](https://github.com/amadeu01)
+@size[0.5em]([talks](https://gitpitch.com/amadeu01/talks/playground-driven-development))
+<br>
+@size[0.2em](Agradecimentos a minha mulher que me liberou da faxina para montar a apresentação hehe)
