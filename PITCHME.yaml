@@ -1,0 +1,5 @@
+published : true
+theme : simple
+
+footnote: "2018 Amadeu Cavalcante"
+theme-override: assets/PITCHME.css

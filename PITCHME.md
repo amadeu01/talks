@@ -1,22 +1,16 @@
-build-lists: true
-theme: black
 
-# [fit] Playground Driven Development
+# @size[2.5em](Playground Driven Development)
 #### Amadeu Cavalcante – @amadeu01
 
-^ oi 👋
 
-
-
-
-
+ oi 👋
 
 
 
 
 ---
 
-# [fit] O que é Playground Driven Development?
+# @size[2.5em](O que é Playground Driven Development?)
 
 ^ Outra metodologia de desenvolvimento?
 
@@ -26,42 +20,39 @@ theme: black
 
 ---
 
-# [fit] Quem usa isso ?
+# @size[3.5em](Quem usa isso ?)
 #### https://www.github.com/kickstarter/ios-oss
 
-^ Kickstarter usou isso por um tempo. Mas, "esqueceram".
+@note[Kickstarter usou isso por um tempo. Mas, "esqueceram"]
 
-^ Kickstarter é open source, então, pode dar uma olhar lá 😁
+@note[Kickstarter é open source, então, pode dar uma olhar lá 😁]
 
-^ A primeira vez que vi isso foi em uma palestra de um cara que costumava trabalhar no Kickstarter
+@note[A primeira vez que vi isso foi em uma palestra de um cara que costumava trabalhar no Kickstarter]
 
-^ O carinha que apresentou isso Brandon Williams
+@note[O carinha que apresentou isso Brandon Williams]
 
 ---
-[.build-lists: false]
 
-# [fit] Requirements
+### Requirements
 
 * Isolar views das regras de negócio
 
-^ É fácil, porém um pouco chato
+@note[É fácil, porém um pouco chato]
 
-^ A view tem que poder trabalhar normalmente isolada de banco local, ou chamadas a internet. Você pode ter um "estado padrão" e só alterar o "estado" da sua aplicação e o `ViewController` terá que respeitar isso.
+@note[A view tem que poder trabalhar normalmente isolada de banco local, ou chamadas a internet. Você pode ter um "estado padrão" e só alterar o "estado" da sua aplicação e o `ViewController` terá que respeitar isso.]
 
 ---
-[.build-lists: false]
 
-# [fit] Requirements
+### Requirements
 
 * Isolar views das regras de negócio
 * Sem side effects
 
-^ O playground fica rodando loucamente, você não quer que ele fique travando por conta de requests, ou outras operações demoradas :P
+@note[O playground fica rodando loucamente, você não quer que ele fique travando por conta de requests, ou outras operações demoradas :P]
 
 ---
-[.build-lists: false]
 
-# [fit] Requirements
+### Requirements
 
 * Isolar views das regras de negócio
 * Sem side effects
@@ -70,9 +61,8 @@ theme: black
 ^ Quando você tem um playground no projeto do xcode, ou em um workspace. Ele pode acessar os frameworks do seu projeto. No entanto, ele não pode acessar seus arquivos 😭 Como fazer isso então? Você cria um `Cocoa FrameWork`, coloca os arquivos que são importantes para o seu app lá, tirando o `AppDelegate`, e voilà. Você pode importar seu `Framework` no playground e, daí, é só sair usando hehe.
 
 ---
-[.build-lists: false]
 
-# [fit] Requirements
+### Requirements
 
 * Isolar views das regras de negócio
 * Sem side effects
@@ -83,7 +73,7 @@ theme: black
 
 ---
 
-# [fit] Pros
+###  Pros
 
 * Você ganhou isolação (Você se preocupou com o design da sua aplicação)
 * Documentação em forma de playground (Um tipo de BDD)
@@ -93,7 +83,7 @@ theme: black
 
 ---
 
-# Cons
+### Cons
 
 * Playground nem sempre é seu amigo
 * Você tem que estruturar um pouco mais seu app
@@ -106,7 +96,7 @@ theme: black
 
 ---
 
-# [fit] Demo Chinela App
+# Demo Chinela App
 
 ^ Charts
 
@@ -124,7 +114,7 @@ theme: black
 
 ---
 
-## [fit] Next steps
+### Next steps
 
 * Usar Screenshot testing (Tem uma lib do facebook)
 * "Testar" o playground usando CI?
@@ -132,7 +122,9 @@ theme: black
 ---
 
 #### Playground Driven Development
-# [fit] Obrigado!!!  👋
+
+Obrigado!!!  👋
+
 #### Amadeu Cavalcante – @amadeu01
 #### https://gitpitch.com/amadeu01/talks/playground-driven-development
 

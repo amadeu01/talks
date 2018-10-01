@@ -1,0 +1,47 @@
+.reveal a, .reveal a:hover {
+  color: #fef6e3;
+  border-bottom: 1px dotted #fef6e3;
+}
+
+
+.reveal section img {
+  border: 0;
+  box-shadow: none;
+  max-height:85vh;
+  vertical-align: middle;
+}
+
+.reveal section .attention{
+  text-align: center;
+    line-height: 1em;
+}
+
+.reveal section .font-overall {
+  font-size: 10em;
+  margin-top: calc(50%  - 1em);
+}
+
+.reveal section .font-big {
+  font-size: 2em;
+  margin-top: calc(50%  - 2.5em);
+}
+
+.reveal section{
+  margin-top: 3vh;
+}
+
+.reveal section h2{
+  margin-bottom: 2.5rem;
+}
+
+.reveal .auther{
+  text-align: right;
+}
+.reveal .date{
+  text-align: right;
+  margin-top: 2em;
+}
+
+.reveal {
+  background-color: #42A67C; 
+}
