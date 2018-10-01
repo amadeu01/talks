@@ -14,8 +14,6 @@
 
 
 
-
-
 Note:
 Outra metodologia de desenvolvimento?
 É uma maneira fantástica de tentar coisas novas e, principalmente, testar UI
@@ -23,8 +21,13 @@ Outro <Alguma coisa>DD
 ---
 
 ### Quem usa isso ?
+<br>
 
-#### (Kickstarter)[https://www.github.com/kickstarter/ios-oss]
+@ul
+
+- [Kickstarter](https://www.github.com/kickstarter/ios-oss)
+
+@ulend
 
 Note:
 Kickstarter usou isso por um tempo. Mas, "esqueceram"]
@@ -38,23 +41,18 @@ O carinha que apresentou isso Brandon Williams
 ---
 
 ### Requirements
+<br>
 
-* Isolar views das regras de negócio @note[É fácil, porém um pouco chato. A view tem que poder trabalhar normalmente isolada de banco local, ou chamadas a internet. Você pode ter um "estado padrão" e só alterar o "estado" da sua aplicação e o `ViewController` terá que respeitar isso.]
+@ul
 
----
+- Isolar views das regras de negócio 
+- Sem side effects
+- Cocoa Framework
+@ulend
 
-### Requirements
-
-* Isolar views das regras de negócio
-* Sem side effects @note[O playground fica rodando loucamente, você não quer que ele fique travando por conta de requests, ou outras operações demoradas :P]
-
----
-
-### Requirements
-
-* Isolar views das regras de negócio
-* Sem side effects
-* Cocoa Framework - @note[Quando você tem um playground no projeto do xcode, ou em um workspace. Ele pode acessar os frameworks do seu projeto. No entanto, ele não pode acessar seus arquivos 😭 Como fazer isso então? Você cria um `Cocoa FrameWork`, coloca os arquivos que são importantes para o seu app lá, tirando o `AppDelegate`, e voilà. Você pode importar seu `Framework` no playground e, daí, é só sair usando hehe.]
+Note: É fácil, porém um pouco chato. A view tem que poder trabalhar normalmente isolada de banco local, ou chamadas a internet. Você pode ter um "estado padrão" e só alterar o "estado" da sua aplicação e o `ViewController` terá que respeitar isso.
+O playground fica rodando loucamente, você não quer que ele fique travando por conta de requests, ou outras operações demoradas :P]
+Quando você tem um playground no projeto do xcode, ou em um workspace. Ele pode acessar os frameworks do seu projeto. No entanto, ele não pode acessar seus arquivos 😭 Como fazer isso então? Você cria um `Cocoa FrameWork`, coloca os arquivos que são importantes para o seu app lá, tirando o `AppDelegate`, e voilà. Você pode importar seu `Framework` no playground e, daí, é só sair usando hehe.
 
 ---
 
