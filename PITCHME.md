@@ -3,7 +3,10 @@
 <br>
 
 
- oi 👋 
+ oi 
+<br>
+ 
+ 👋 
 
 
 ---
@@ -46,7 +49,8 @@ O carinha que apresentou isso Brandon Williams
 - Isolar views das regras de negócio 
 - Sem side effects
 - Cocoa Framework
-* Inicializar os Bundles
+- Inicializar os Bundles
+
 @ulend
 
 Note: É fácil, porém um pouco chato. A view tem que poder trabalhar normalmente isolada de banco local, ou chamadas a internet. Você pode ter um "estado padrão" e só alterar o "estado" da sua aplicação e o `ViewController` terá que respeitar isso.
@@ -81,7 +85,7 @@ Acho que estrurar o app é um ganho, como você ganharia com TDD
 # Demo Chinela App
 
 Note:
-Charts]
+Charts
 
 Elm
 
@@ -107,12 +111,13 @@ Se você mudar algo no ChinelaFramework, você tem que buildar novamente, daí, 
 #### Playground Driven Development
 <br>
 
-Obrigado!!!  👋
-
+Obrigado!!!  
 <br>
 
+👋
+
 @snap[south-east]
-@size[0.5em](Amadeu Cavalcante – [@amadeu01](https://github.com/amadeu01) - [talks](https://gitpitch.com/amadeu01/talks/playground-driven-development))
+@size[0.5em](Amadeu Cavalcante – [@amadeu01](https://github.com/amadeu01) - [talks](https://gitpitch.com/amadeu01/talks/playground-driven-development) )
 @snapend
 
 <br>
