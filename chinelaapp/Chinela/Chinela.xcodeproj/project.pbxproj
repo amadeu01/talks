@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		6579D2732162484D0055D74F /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6579D2722162484D0055D74F /* SnapKit.framework */; };
 		6579D278216249E10055D74F /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6579D275216249E10055D74F /* Driver.swift */; };
-		6579D279216249E10055D74F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6579D276216249E10055D74F /* Extensions.swift */; };
+		6579D279216249E10055D74F /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6579D276216249E10055D74F /* UIViewController+Extensions.swift */; };
 		6579D27A216249E10055D74F /* SideEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6579D277216249E10055D74F /* SideEffects.swift */; };
 		6579D27C21624A240055D74F /* ConstraintsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6579D27B21624A240055D74F /* ConstraintsExample.swift */; };
 		6579D27E21624DC00055D74F /* BasicUIScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6579D27D21624DC00055D74F /* BasicUIScrollViewController.swift */; };
@@ -84,7 +84,7 @@
 /* Begin PBXFileReference section */
 		6579D2722162484D0055D74F /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		6579D275216249E10055D74F /* Driver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Driver.swift; path = ChinelaFramework/Elm/Driver.swift; sourceTree = SOURCE_ROOT; };
-		6579D276216249E10055D74F /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = ChinelaFramework/Elm/Extensions.swift; sourceTree = SOURCE_ROOT; };
+		6579D276216249E10055D74F /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+Extensions.swift"; path = "ChinelaFramework/Elm/UIViewController+Extensions.swift"; sourceTree = SOURCE_ROOT; };
 		6579D277216249E10055D74F /* SideEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SideEffects.swift; path = ChinelaFramework/Elm/SideEffects.swift; sourceTree = SOURCE_ROOT; };
 		6579D27B21624A240055D74F /* ConstraintsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintsExample.swift; sourceTree = "<group>"; };
 		6579D27D21624DC00055D74F /* BasicUIScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicUIScrollViewController.swift; sourceTree = "<group>"; };
@@ -160,15 +160,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6579D274216249AC0055D74F /* Elm */ = {
+		6579D27F2162795C0055D74F /* Elm */ = {
 			isa = PBXGroup;
 			children = (
 				6579D275216249E10055D74F /* Driver.swift */,
-				6579D276216249E10055D74F /* Extensions.swift */,
+				6579D276216249E10055D74F /* UIViewController+Extensions.swift */,
 				6579D277216249E10055D74F /* SideEffects.swift */,
 			);
-			name = Elm;
-			path = "New Group";
+			path = Elm;
 			sourceTree = "<group>";
 		};
 		6585B5A52161AF8D005A7AD5 = {
@@ -229,7 +228,7 @@
 		6585B5E52161AFCC005A7AD5 /* ChinelaFramework */ = {
 			isa = PBXGroup;
 			children = (
-				6579D274216249AC0055D74F /* Elm */,
+				6579D27F2162795C0055D74F /* Elm */,
 				6585B6212161E638005A7AD5 /* Charts */,
 				6585B5E62161AFCC005A7AD5 /* ChinelaFramework.h */,
 				6585B5E72161AFCC005A7AD5 /* Info.plist */,
@@ -534,7 +533,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6579D278216249E10055D74F /* Driver.swift in Sources */,
-				6579D279216249E10055D74F /* Extensions.swift in Sources */,
+				6579D279216249E10055D74F /* UIViewController+Extensions.swift in Sources */,
 				6579D27E21624DC00055D74F /* BasicUIScrollViewController.swift in Sources */,
 				6579D27A216249E10055D74F /* SideEffects.swift in Sources */,
 				6579D27C21624A240055D74F /* ConstraintsExample.swift in Sources */,
