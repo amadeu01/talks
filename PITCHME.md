@@ -1,5 +1,5 @@
 
-# @size[2.5em](Playground Driven Development)
+# @size[0.5em](Playground Driven Development)
 #### Amadeu Cavalcante – @amadeu01
 
 
@@ -10,7 +10,7 @@
 
 ---
 
-# @size[2.5em](O que é Playground Driven Development?)
+# @size[1.5em](O que é Playground Driven Development?)
 
 ^ Outra metodologia de desenvolvimento?
 
