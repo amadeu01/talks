@@ -10,17 +10,18 @@
 
 ---
 
-# @size[1.5em](O que é Playground Driven Development?)
+## O que é Playground Driven Development?
 
-^ Outra metodologia de desenvolvimento?
+@note[Outra metodologia de desenvolvimento?]
 
-^ Outro <Alguma coisa>DD
+@note[Outro <Alguma coisa>DD]
 
-^ É uma maneira fantástica de tentar coisas novas e, principalmente, testar UI 
+@note[É uma maneira fantástica de tentar coisas novas e, principalmente, testar UI]
 
 ---
 
-# @size[3.5em](Quem usa isso ?)
+### Quem usa isso ?
+
 #### https://www.github.com/kickstarter/ios-oss
 
 @note[Kickstarter usou isso por um tempo. Mas, "esqueceram"]
