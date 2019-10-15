@@ -20,6 +20,9 @@ oi
 @ulend
 
 Note:
+O que é _funcional_
+No lugar de ter comportamento fortemete acoplado a estrutura de dados, você tem funções que irão
+se combinar para poder transformar sua pedaço de dado.
 Modularity: Rather than thinking of a program as a sequence of assignments and method calls, functional programmers emphasize that each program can be repeatedly broken into smaller and smaller pieces, and all these pieces can be assembled using function application to define a complete program. Of course, this decomposition of a large program into smaller pieces only works if we can avoid sharing state between the individual components. This brings us to our next point.
 Escrever menos código.
 Mais simples de fazer mudanças.
