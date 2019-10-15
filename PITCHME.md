@@ -168,7 +168,7 @@ end
 
 @[1]
 @[2]
-@[4,7]
+@[4,9]
 
 +++
 
@@ -198,3 +198,7 @@ end
 - https://elixir-lang.org/crash-course.html#modules
 - https://elixirschool.com/en/
 - https://elixircasts.io/
+
+---
+
+### Por hoje é só pessoal!
