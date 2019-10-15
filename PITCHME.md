@@ -209,6 +209,7 @@ iex(2)> [1, 2, 3] |>
 @snapend
 
 ---
+
 ### Resposta
 
 - 2. ['\v\f\r']
@@ -216,6 +217,7 @@ iex(2)> [1, 2, 3] |>
 <br>
 
 ---
+
 #### Explicação
 
 ```plain
@@ -309,9 +311,12 @@ end
 @snap[west span-60 text-center]
 
 ```Elixir
-iex(20)> curriedMap = curry(&Enum.map/2)
+iex(26)> curriedMap = curry(&Enum.map/2)
 #Function<0.90432989/1 in Curry.curry/3>
-iex(21)> fn x -> x + 2 end |> ([1, 2, 3] |> curriedMap.()).()
+iex(27)> incr = fn x -> x + 1 end
+#Function<7.126501267/1 in :erl_eval.expr/5>
+iex(28)> incr |>
+...(28)> ([1, 2, 3] |> curriedMap.()).()
 ?
 ```
 
@@ -322,10 +327,11 @@ iex(21)> fn x -> x + 2 end |> ([1, 2, 3] |> curriedMap.()).()
 @snapend
 
 @snap[east span-40 text-08]
-@box[](<br> 1. Error <br><br> 2. ['\a\b\c'] <br><br> 3. [3, 4, 5])
+@box[](<br> 1. Error <br><br> 2. ['\a\b\c'] <br><br> 3. [2, 3, 4])
 @snapend
 
 ---
+
 ### Resposta
 
 - 3. [3, 4, 5]
