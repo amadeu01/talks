@@ -208,8 +208,11 @@ iex(2)> [1, 2, 3] |>
 @snapend
 
 ---
+### Resposta
 
-### Explicação
+- 2. ['\v\f\r']
+
+#### Explicação
 
 ```plain
 Description
