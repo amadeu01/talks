@@ -167,6 +167,23 @@ Note:
 A forma mais fácil de começar a brincar com elixir é: começar um shell e tentar escrever algum código.
 Uma dica legal, começar um projeto e usar `iex -S mix` para carregar o seu projeto
 
++++
+
+#### Shell interativo
+
+#### Pequena dica
+
+```elixir
+➜ mix new elixir_playground
+➜ iex -S mix
+Interactive Elixir (1.9.1) - press Ctrl+C to exit (type h() ENTER for help)
+iex(1)>
+```
+
+Note:
+A forma mais fácil de começar a brincar com elixir é: começar um shell e tentar escrever algum código.
+Uma dica legal, começar um projeto e usar `iex -S mix` para carregar o seu projeto
+
 ---
 
 #### Shell interativo
@@ -370,3 +387,7 @@ iex(28)> incr |>
 <br>
 
 ![qrcode-pipefy](full_stack_pipefy.png)
+
+<br>
+
+www.pipefy.com/careers/
