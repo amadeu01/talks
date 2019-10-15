@@ -183,7 +183,9 @@ Implemented protocols
 
 ---
 
-#### Puzzle
+@snap[north-west span-40 text-08]
+@box[](Puzzle)
+@snapend
 
 @snap[west span-60 text-center]
 
