@@ -152,6 +152,10 @@ How will you interact with it?
 
 #### Resolvendo o mesmo exemplo.
 
+---
+
+#### Resolvendo o mesmo exemplo.
+
 ```elixir
 defmodule Position do
   defstruct [:x, :y]
