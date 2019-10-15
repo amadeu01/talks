@@ -23,6 +23,19 @@ Note:
 Modularity: Rather than thinking of a program as a sequence of assignments and method calls, functional programmers emphasize that each program can be repeatedly broken into smaller and smaller pieces, and all these pieces can be assembled using function application to define a complete program. Of course, this decomposition of a large program into smaller pieces only works if we can avoid sharing state between the individual components. This brings us to our next point.
 Escrever menos código.
 Mais simples de fazer mudanças.
+Conseguir trocar ideias com time mobile de outra plataforma mais facilmente.
+
+---
+
+### Background de mobile
+
+---
+
+### Swift
+
+Note: What is the typing model?
+How will you interact with it?
+What are the core features that make the language unique?
 
 ---
 
@@ -78,46 +91,6 @@ func union(_ region: @escaping Region, with other: @escaping Region) -> Region {
 
 ---
 
-### Background de mobile
-
----
-
-### Swift
-
-Note: What is the typing model?
-How will you interact with it?
-What are the core features that make the language unique?
-
-+++
-
-#### Swift
-
-<br>
-
-@ul
-
-- Protocol Oriented Programming
-- Tipo por valor e por referência
-- Tupla e multiplo retornos
-- Generics ♥
-- `*` Extensions
-- Pattern Match
-- Functional (Prelude)
-
-@ulend
-
-+++
-
-#### Swift
-
-<br>
-
-Objective-C
-
-Note:
-
----
-
 ### Kotlin
 
 Note: What is the typing model?
@@ -126,30 +99,47 @@ What are the decision constructs and core data structures?
 
 +++
 
-#### Kotlin
+### Exemplo
 
-<br>
+```kotlin
+data class Position(val x: Double, val y: Double)
 
-@ul
+val Position.length: Double
+	get() {
+        return sqrt(x*x + y*y)
+    }
 
-- Contracts ♥️
-- `*` Data class
-- Extensions
-- Functional (Arrow)
-- Lambda expressions + Inline functions = Inner DSL
-
-@ulend
+fun Position.minus(other: Position): Position {
+    return Position(x - other.x, y = other.y)
+}
+```
 
 +++
 
-#### Kotlin
+```kotlin
+typealias Region = (Position) -> Boolean
 
-<br>
+fun circle(radius: Double): Region {
+    return { point -> point.length <= radius }
+}
 
-Java / JVM
+fun shift(region: Region, offset: Position): Region {
+    return { point -> region(point.minus(offset)) }
+}
 
-Note:
-🤔 Multiplataforma
+fun invert(region: Region): Region {
+  return { point -> !region(point) }
+}
+
+fun union(region: Region, other: Region): Region {
+  return { point -> region(point) || other(point) }
+}
+```
+
+@[3,6]
+@[7,10]
+@[11-14]
+@[15-18]
 
 ---
 
