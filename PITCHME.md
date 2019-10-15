@@ -1,12 +1,11 @@
-
 ## Mobile 🤯 Elixir
+
 <br>
 
-
- oi 
+oi
 <br>
- 
- 👋 
+
+👋
 
 ---
 
@@ -52,11 +51,6 @@ extension Position {
 
 +++
 
-@snap[north-east span-100 text-06 text-gray]
-    Exemplo
-@snapend
-
-@snap[west span-40]
 ```swift
 typealias Region = (Position) -> Bool
 
@@ -76,7 +70,6 @@ func union(_ region: @escaping Region, with other: @escaping Region) -> Region {
     return { point in region(point) || other(point) }
 }
 ```
-@snapend
 
 @[3,5]
 @[7,10]
@@ -85,7 +78,6 @@ func union(_ region: @escaping Region, with other: @escaping Region) -> Region {
 ---
 
 ### Background de mobile
-
 
 ---
 
@@ -98,6 +90,7 @@ What are the core features that make the language unique?
 +++
 
 #### Swift
+
 <br>
 
 @ul
@@ -115,6 +108,7 @@ What are the core features that make the language unique?
 +++
 
 #### Swift
+
 <br>
 
 Objective-C
@@ -132,6 +126,7 @@ What are the decision constructs and core data structures?
 +++
 
 #### Kotlin
+
 <br>
 
 @ul
@@ -147,6 +142,7 @@ What are the decision constructs and core data structures?
 +++
 
 #### Kotlin
+
 <br>
 
 Java / JVM
@@ -163,11 +159,8 @@ How will you interact with it?
 
 ---
 
-
-
-
 ---
 
-### Elixir 
+### Elixir
 
 - https://elixir-lang.org/crash-course.html#modules
