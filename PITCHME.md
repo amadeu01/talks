@@ -277,6 +277,61 @@ end
 
 ---
 
+#### Explorando um pouco mais
+
+```elixir
+defmodule Curry do
+
+  def curry(fun) do
+    {_, arity} = :erlang.fun_info(fun, :arity)
+    curry(fun, arity, [])
+  end
+
+  def curry(fun, 0, arguments) do
+    apply(fun, Enum.reverse arguments)
+  end
+
+  def curry(fun, arity, arguments) do
+    fn arg -> curry(fun, arity - 1, [arg | arguments]) end
+  end
+
+end
+```
+
+@[3,8,12]
+
+---
+
+@snap[north-west span-40 text-08]
+@box[](Puzzle)
+@snapend
+
+@snap[west span-60 text-center]
+
+```Elixir
+iex(20)> curriedMap = curry(&Enum.map/2)
+#Function<0.90432989/1 in Curry.curry/3>
+iex(21)> fn x -> x + 2 end |> ([1, 2, 3] |> curriedMap.()).()
+?
+```
+
+@snapend
+
+@snap[north-east span-40 text-08]
+@box[](Resposta)
+@snapend
+
+@snap[east span-40 text-08]
+@box[](<br> 1. Error <br><br> 2. ['\a\b\c'] <br><br> 3. [3, 4, 5])
+@snapend
+
+---
+### Resposta
+
+- 2. ['\v\f\r']
+
+<br>
+
 ### Elixir
 
 #### Onde posso começar ?
