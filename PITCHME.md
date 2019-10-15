@@ -55,25 +55,26 @@ extension Position {
 typealias Region = (Position) -> Bool
 
 func circle(radius: Distance) -> Region {
-    return { point in point.length <= radius }
+  return { point in point.length <= radius }
 }
 
 func shift(_ region: @escaping Region, by offset: Position) -> Region {
-    return { point in region(point - offset) }
+  return { point in region(point - offset) }
 }
 
 func invert(_ region: @escaping Region) -> Region {
-    return { point in !region(point)}
+  return { point in !region(point)}
 }
 
 func union(_ region: @escaping Region, with other: @escaping Region) -> Region {
-    return { point in region(point) || other(point) }
+  return { point in region(point) || other(point) }
 }
 ```
 
-@[3,5]
+@[3,6]
 @[7,10]
 @[11-14]
+@[15-18]
 
 ---
 
