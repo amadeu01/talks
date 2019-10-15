@@ -56,6 +56,7 @@ extension Position {
     Exemplo
 @snapend
 
+@snap[west span-40]
 ```swift
 typealias Region = (Position) -> Bool
 
@@ -75,6 +76,8 @@ func union(_ region: @escaping Region, with other: @escaping Region) -> Region {
     return { point in region(point) || other(point) }
 }
 ```
+@snapend
+
 @[3,5]
 @[7,10]
 @[11-14]
