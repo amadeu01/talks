@@ -328,9 +328,14 @@ iex(21)> fn x -> x + 2 end |> ([1, 2, 3] |> curriedMap.()).()
 ---
 ### Resposta
 
-- 2. ['\v\f\r']
+- 3. [3, 4, 5]
 
 <br>
+
+---
+#### Explicação
+
+---
 
 ### Elixir
 
