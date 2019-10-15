@@ -51,7 +51,7 @@ extension Position {
 
 +++
 
-```swift
+```swift zoom-03
 typealias Region = (Position) -> Bool
 
 func circle(radius: Distance) -> Region {
