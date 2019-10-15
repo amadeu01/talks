@@ -247,7 +247,8 @@ defmodule Position do
     :math.sqrt(x*x + y*y)
   end
 
-  def minus(%Position{x: lhs_x, y: lhs_y}, %Position{x: rhs_x, y: rhs_y}) do
+  def minus(%Position{x: lhs_x, y: lhs_y},
+            %Position{x: rhs_x, y: rhs_y}) do
     %Position{x: lhs_x - rhs_x, y: lhs_y - rhs_y}
   end
 end
@@ -255,7 +256,7 @@ end
 
 @[1]
 @[2]
-@[4,8]
+@[4,8,9]
 
 +++
 
