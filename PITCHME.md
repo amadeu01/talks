@@ -150,17 +150,17 @@ How will you interact with it?
 
 ---
 
-### Elixir 
+### Elixir
 
 #### Shell interativo
 
 ```elixir
 ➜ iex
 Interactive Elixir (1.9.1) - press Ctrl+C to exit (type h() ENTER for help)
-iex(1)> 
+iex(1)>
 ```
 
-Note: 
+Note:
 A forma mais fácil de começar a brincar com elixir é: começar um shell e tentar escrever algum código.
 Uma dica legal, começar um projeto e usar `iex -S mix` para carregar o seu projeto
 
@@ -182,14 +182,16 @@ Implemented protocols
 ```
 
 ---
+
 #### Puzzle
 
-@snap[west span-40 text-center]
+@snap[west span-60 text-center]
 
 ```Elixir
-iex(7)> Enum.map [1, 2, 3], fn x -> x * 10 end
-[10, 20, 30]
-iex(8)> Enum.map [1, 2, 3], fn x -> x + 10 end
+iex(1)> [1, 2, 3] |>
+...(1)> Enum.map(fn x -> x * 10 end)
+iex(2)> [1, 2, 3] |>
+...(2)> Enum.map(fn x -> x + 10 end)
 ?
 ```
 
@@ -200,11 +202,12 @@ iex(8)> Enum.map [1, 2, 3], fn x -> x + 10 end
 @snapend
 
 @snap[east span-40 text-08]
-@box[bg-blue](Step 2. Query 1. [1, 2, 3] 2. ['\v\f\r'] 3. [11, 12, 13])
+@box[](<br> 1. [1, 2, 3] <br> 2. ['\v\f\r'] <br> 3. [11, 12, 13])
 @snapend
 
 ---
-### Explicação 
+
+### Explicação
 
 ```plain
 Description
