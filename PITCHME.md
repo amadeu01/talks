@@ -202,7 +202,7 @@ iex(2)> [1, 2, 3] |>
 @snapend
 
 @snap[east span-40 text-08]
-@box[](<br> 1. [1, 2, 3] <br> 2. ['\v\f\r'] <br> 3. [11, 12, 13])
+@box[](<br> 1. [1, 2, 3] <br><br> 2. ['\v\f\r'] <br><br> 3. [11, 12, 13])
 @snapend
 
 ---
