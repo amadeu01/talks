@@ -84,8 +84,8 @@ func union(_ region: @escaping Region, with other: @escaping Region) -> Region {
 }
 ```
 
-@[3,6]
-@[7,10]
+@[3-6]
+@[7-10]
 @[11-14]
 @[15-18]
 
@@ -99,7 +99,7 @@ What are the decision constructs and core data structures?
 
 +++
 
-### Exemplo
+#### Exemplo
 
 ```kotlin
 data class Position(val x: Double, val y: Double)
@@ -136,8 +136,8 @@ fun union(region: Region, other: Region): Region {
 }
 ```
 
-@[3,6]
-@[7,10]
+@[3-6]
+@[7-10]
 @[11-14]
 @[15-18]
 
@@ -150,8 +150,51 @@ How will you interact with it?
 
 ---
 
+#### Resolvendo o mesmo exemplo.
+
+```elixir
+defmodule Position do
+  defstruct [:x, :y]
+
+  def length(%Position{x: x, y: y}) do
+    :math.sqrt(x*x + y*y)
+  end
+
+  def minus(%Position{x: lhs_x, y: lhs_y}, %Position{x: rhs_x, y: rhs_y}) do
+    %Position{x: lhs_x - rhs_x, y: lhs_y - rhs_y}
+  end
+end
+```
+
+@[1]
+@[2]
+@[4,7]
+
++++
+
+```elixir
+defmodule Diagrams do
+
+  def circle(radius) do
+    fn point -> point |> Position.length <= radius end
+  end
+
+  def shift(region, opts \\ []) do
+    fn point -> region.(Position.minus(point, opts[:offset])) end
+  end
+
+  def invert(region) do
+    &(!region.(&1))
+  end
+end
+```
+
 ---
 
 ### Elixir
 
+#### Onde posso começar ?
+
 - https://elixir-lang.org/crash-course.html#modules
+- https://elixirschool.com/en/
+- https://elixircasts.io/
