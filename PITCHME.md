@@ -150,11 +150,77 @@ How will you interact with it?
 
 ---
 
-#### Resolvendo o mesmo exemplo.
+### Elixir 
+
+#### Shell interativo
+
+```elixir
+➜ iex
+Interactive Elixir (1.9.1) - press Ctrl+C to exit (type h() ENTER for help)
+iex(1)> 
+```
+
+Note: 
+A forma mais fácil de começar a brincar com elixir é: começar um shell e tentar escrever algum código.
+Uma dica legal, começar um projeto e usar `iex -S mix` para carregar o seu projeto
+
+---
+
+#### Shell interativo
+
+```elixir
+iex(2)> i [1, 2, 3]
+Term
+  [1, 2, 3]
+Data type
+  List
+Reference modules
+  List
+Implemented protocols
+  Collectable, Enumerable, IEx.Info, Inspect, List.Chars, String.Chars, Vex.Blank, Vex.Extract, Vex.Validator.Source
+
+```
+
+---
+#### Puzzle
+
+@snap[west span-40 text-center]
+
+```Elixir
+iex(7)> Enum.map [1, 2, 3], fn x -> x * 10 end
+[10, 20, 30]
+iex(8)> Enum.map [1, 2, 3], fn x -> x + 10 end
+?
+```
+
+@snapend
+
+@snap[north-east span-40 text-08]
+@box[](Resposta)
+@snapend
+
+@snap[east span-40 text-08]
+@box[bg-blue](Step 2. Query 1. [1, 2, 3] 2. ['\v\f\r'] 3. [11, 12, 13])
+@snapend
+
+---
+### Explicação 
+
+```plain
+Description
+  This is a list of integers that is printed as a sequence of characters
+  delimited by single quotes because all the integers in it represent printable
+  ASCII characters. Conventionally, a list of Unicode code points is known as a
+  charlist and a list of ASCII characters is a subset of it.
+Raw representation
+  [11, 12, 13]
+```
 
 ---
 
 #### Resolvendo o mesmo exemplo.
+
+---
 
 ```elixir
 defmodule Position do
@@ -192,6 +258,10 @@ defmodule Diagrams do
   end
 end
 ```
+
+@[3-5]
+@[7-9]
+@[10-12]
 
 ---
 
