@@ -192,6 +192,7 @@ Implemented protocols
 ```Elixir
 iex(1)> [1, 2, 3] |>
 ...(1)> Enum.map(fn x -> x * 10 end)
+[10, 20, 30]
 iex(2)> [1, 2, 3] |>
 ...(2)> Enum.map(fn x -> x + 10 end)
 ?
