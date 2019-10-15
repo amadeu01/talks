@@ -333,6 +333,7 @@ iex(21)> fn x -> x + 2 end |> ([1, 2, 3] |> curriedMap.()).()
 <br>
 
 ---
+
 #### Explicação
 
 ---
@@ -348,3 +349,11 @@ iex(21)> fn x -> x + 2 end |> ([1, 2, 3] |> curriedMap.()).()
 ---
 
 ### Por hoje é só pessoal!
+
+---
+
+#### Vagas
+
+<br>
+
+![qrcode-pipefy](full_stack_pipefy.png)
