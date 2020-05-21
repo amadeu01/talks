@@ -2,20 +2,20 @@
 
 <br>
 
-oi
+Hi
 <br>
 
 👋
 
 ---
 
-### Paradigma Funcional
+### Functional Paradigm
 
 @ul
 
-- O que é _funcional_?
-- Como comecei a aplicar?
-- Qual o motivo de começar a usar paradigma funcional em aplicações mobile?
+- What is _functional_?
+- How did I start ?
+- What is the reason I had started using functional paradigm for developing mobile apps?
 
 @ulend
 
@@ -30,25 +30,31 @@ Conseguir trocar ideias com time mobile de outra plataforma mais facilmente.
 
 ---
 
-### Background de mobile
+### Mobile Background
 
 ---
 
 ### Swift
 
 Note: What is the typing model?
+A Type Safe or strongly typed language tries to protect you from making mistakes with types. For example, you cannot assign an integer to a variable that was previously declared as a string.
+
+Here’s how Apple describes type safety in Swift:
+
+"Swift helps you to be clear about the types of values your code can work with. If part of your code expects a String, type safety prevents you from passing it an Int by mistake. This restriction enables you to catch and fix errors as early as possible in the development process."
+
 How will you interact with it?
 What are the core features that make the language unique?
 
 ---
 
-#### Exemplo
+#### Example
 
-Quero construir uma função que represente um diagrama.
+I want to build a function that is able to represent a diagram.
 
 +++
 
-#### Exemplo
+#### Example
 
 ```swift
 typealias Distance = Double
@@ -102,7 +108,7 @@ What are the decision constructs and core data structures?
 
 +++
 
-#### Exemplo
+#### Example
 
 ```kotlin
 data class Position(val x: Double, val y: Double)
@@ -155,7 +161,7 @@ How will you interact with it?
 
 ### Elixir
 
-#### Shell interativo
+#### Interactive Shell 
 
 ```elixir
 ➜ iex
@@ -166,12 +172,12 @@ iex(1)>
 Note:
 A forma mais fácil de começar a brincar com elixir é: começar um shell e tentar escrever algum código.
 Uma dica legal, começar um projeto e usar `iex -S mix` para carregar o seu projeto
-
+One thing that I link in Elixir is that it is simple to test 3 party libs with interactive shell. I can't relly say the same for kotlin or swift -- which both offer tools to do this, but not as nice as elixir.
 +++
 
 #### Shell interativo
 
-#### Pequena dica
+##### Tips
 
 ```elixir
 ➜ mix new elixir_playground
@@ -186,7 +192,7 @@ Uma dica legal, começar um projeto e usar `iex -S mix` para carregar o seu proj
 
 ---
 
-#### Shell interativo
+#### Interactive Shell
 
 ```elixir
 iex(2)> i [1, 2, 3]
@@ -221,7 +227,7 @@ iex(2)> [1, 2, 3] |>
 @snapend
 
 @snap[north-east span-40 text-08]
-@box[](Resposta)
+@box[](Answer)
 @snapend
 
 @snap[east span-40 text-08]
@@ -230,7 +236,7 @@ iex(2)> [1, 2, 3] |>
 
 ---
 
-### Resposta
+### Answer
 
 - 2. ['\v\f\r']
 
@@ -238,7 +244,7 @@ iex(2)> [1, 2, 3] |>
 
 ---
 
-#### Explicação
+#### Explanation
 
 ```plain
 Description
@@ -252,7 +258,7 @@ Raw representation
 
 ---
 
-#### Resolvendo o mesmo exemplo.
+#### Solving the same problem we did
 
 ---
 
@@ -300,7 +306,7 @@ end
 
 ---
 
-#### Explorando um pouco mais
+#### Exploring
 
 ```elixir
 defmodule Curry do
@@ -347,7 +353,7 @@ iex(28)> incr |>
 @snapend
 
 @snap[north-east span-40 text-08]
-@box[](Resposta)
+@box[](Answer)
 @snapend
 
 @snap[east span-40 text-08]
@@ -356,7 +362,7 @@ iex(28)> incr |>
 
 ---
 
-### Resposta
+### Answer
 
 - 3. [2, 3, 4]
 
@@ -364,13 +370,13 @@ iex(28)> incr |>
 
 ---
 
-#### Explicação
+#### Explanation
 
 ---
 
 ### Elixir
 
-#### Onde posso começar ?
+#### Where can I start ?
 
 - https://elixir-lang.org/crash-course.html#modules
 - https://elixirschool.com/en/
@@ -378,16 +384,5 @@ iex(28)> incr |>
 
 ---
 
-### Por hoje é só pessoal!
+### That's all folks! Thanks 🥳
 
----
-
-#### Vagas
-
-<br>
-
-![qrcode-pipefy](full_stack_pipefy.png)
-
-<br>
-
-www.pipefy.com/careers/
